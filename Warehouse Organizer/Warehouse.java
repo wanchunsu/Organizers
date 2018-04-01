@@ -1,4 +1,4 @@
-package assignment2;
+
 
 public class Warehouse{
 
@@ -65,7 +65,7 @@ public class Warehouse{
 	 * @param end
 	 */
 	protected void mergeSort(int start, int end){
-		//ADD YOUR CODE HERE
+		
 		//implementing mergeSort by calling merge after recursive calls of mergeSort
 		if(start<end) {
 			//creating a variable to store the midpoint
@@ -87,7 +87,7 @@ public class Warehouse{
 	 * @param end
 	 */
 	protected void merge(int start, int mid, int end){
-		//ADD YOUR CODE HERE
+		
 		//Creating variables to store the number of elements on the left and right of the midpoint
 		int m = mid-start+1;
 		int n = end - mid;
@@ -143,7 +143,7 @@ public class Warehouse{
 	 * @return problem or noProblem
 	 */
 	public String addBox (Box b){
-		//ADD YOUR CODE HERE
+		
 		//Going through the shelves in the warehouse to find the smallest shelf that can accommodate the box
 		//return the noProblem message id the box was added onto a shelf
 		//otherwise returning the problem message if none of the shelves can hold the box
@@ -162,7 +162,7 @@ public class Warehouse{
 	 * @return problem or noProblem
 	 */
 	public String addToShip (Box b){
-		//ADD YOUR CODE HERE
+		
 		
 		//Checking to see if the box is an urgent box and adding it to the front of the toShipUrgently list
 		if(b instanceof UrgentBox) {
@@ -208,7 +208,7 @@ public class Warehouse{
 	 * @return problem or noProblem
 	 */
 	public String shipBox (String identifier){
-		//ADD YOUR CODE HERE
+		
 		
 		//Going through the warehouse the find the box that needs to be shipped
 		for(int i=0; i<storage.length; i++) {
@@ -232,7 +232,7 @@ public class Warehouse{
 	 * @param position
 	 */
 	public void moveOneBox (Box b, int position){
-		//ADD YOUR CODE HERE
+		
 		
 		//Going through the shelves that are before the shelf with index position
 		for(int i=0; i<position; i++){
@@ -252,7 +252,7 @@ public class Warehouse{
 	 */
 	
 	public void reorganize (){
-		//ADD YOUR CODE HERE
+		
 		
 		//Going through the shelves starting from the lowest once and the first box 
 		for(int i=0; i<this.storage.length; i++) {
