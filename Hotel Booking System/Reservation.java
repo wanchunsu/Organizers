@@ -1,5 +1,4 @@
-// Wan-Chun Su
-// 260729936
+
 public class Reservation {
     //declaring the private attributes for the Reservation class
     private String name;
