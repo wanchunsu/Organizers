@@ -1,4 +1,4 @@
-package assignment2;
+
 
 public class Shelf {
 	
@@ -38,7 +38,7 @@ public class Shelf {
 	 * @param b
 	 */
 	public void addBox(Box b){
-		//ADD YOUR CODE HERE
+		
 		//Adding the box to the shelf and updating the required attributes
 		//Accounting for the possibility that the shelf is empty
 		if(this.firstBox == null && this.lastBox==null) {
@@ -62,7 +62,7 @@ public class Shelf {
 	 * @return
 	 */
 	public Box removeBox(String identifier){
-		//ADD YOUR CODE HERE
+		
 		//Creating a variable to keep track of the box that is being evaluated
 		Box b = this.firstBox;
 		//Using a while loop to run through the elements as long as the shelf is non-empty and the element is not null
