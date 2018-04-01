@@ -1,4 +1,3 @@
-package assignment2;
 
 public class UrgentBox extends Box {
 	
