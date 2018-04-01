@@ -18,9 +18,7 @@ public class BookingSystem {
     //End of provided code. 
     
    public static void main(String[] args){
-        //Student Name: Wan-Chun Su
-        //Student Number: 260729936
-        //Your code goes here. 
+      
        
         //Printing out a welcome message
         System.out.println("Welcome to the COMP 202 booking system" + "\n" + 
