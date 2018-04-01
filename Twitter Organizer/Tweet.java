@@ -1,5 +1,4 @@
-// Wan-Chun Su
-// 260729936
+
 import java.util.HashSet;
 import java.util.ArrayList;
 import java.io.*;
