@@ -1,4 +1,4 @@
-package assignment3;
+
 
 public class Building {
 
@@ -32,7 +32,7 @@ public class Building {
 	}
 	
 	public Building addBuilding (OneBuilding b){
-		// ADD YOUR CODE HERE
+		
 		//Creating a Building object to store OneBuilding b in as data
 		Building toAdd = new Building(b);
 		
@@ -98,7 +98,7 @@ public class Building {
 	
 	
 	public Building addBuildings (Building b){
-		// ADD YOUR CODE HERE
+		
 		//checking if the building is not null before adding the buildings to their respective locations
 		//Calling addBuilding to find where to add the buildings
 		if(b!=null) {
@@ -117,7 +117,7 @@ public class Building {
 	}
 	
 	public Building removeBuilding (OneBuilding b){
-		// ADD YOUR CODE HERE
+	
 		//If the the current building is the building to be removed
 		if(this.data.equals(b)) {
 			//Case where this.same replaces the building that is removed
@@ -204,11 +204,11 @@ public class Building {
 		
 		} 
 		return this;
-		// DON'T FORGET TO MODIFY THE RETURN IF NEEDS BE
+		
 	}
 	
 	public int oldest(){
-		// ADD YOUR CODE HERE
+		
 		//Case where this.older is null, the current node must be oldest
 		if(this.older==null) {
 			return this.data.yearOfConstruction;
@@ -216,12 +216,12 @@ public class Building {
 			return this.older.oldest();
 		}
 		
-		 // DON'T FORGET TO MODIFY THE RETURN IF NEEDS BE
+		
 	}
 	
 	
 	public int highest(){
-		// ADD YOUR CODE HERE
+		
 		//Creating a String[] to store the heights by splitting up the string obtained from stringOfHeights()
 		String[] heightsArray = this.stringOfHeights().split(",");
 		//setting the greatest height to equal the first element of the array
@@ -254,7 +254,7 @@ public class Building {
 	
 	
 	public OneBuilding highestFromYear (int year){
-		// ADD YOUR CODE HERE
+	
 		//returning this.data if the year corresponds to the yearOfConstruction of the current building
 		if(this.data.yearOfConstruction==year) {
 			return this.data;
@@ -273,12 +273,12 @@ public class Building {
 			}
 		}
 		
-	 // DON'T FORGET TO MODIFY THE RETURN IF NEEDS BE
+	
 	}
 	
 
 	public int numberFromYears (int yearMin, int yearMax){
-		// ADD YOUR CODE HERE
+	
 		if(yearMin>yearMax) {
 			return 0;
 		}
@@ -301,11 +301,11 @@ public class Building {
 			numBuildings+=this.younger.numberFromYears(yearMin, yearMax);
 		}
 		
-		return numBuildings; // DON'T FORGET TO MODIFY THE RETURN IF NEEDS BE
+		return numBuildings; 
 	}
 	
 	public int[] costPlanning (int nbYears){
-		// ADD YOUR CODE HERE
+	
 		
 		//Creating an array to store the costs for each year
 		int[] costForYear = new int[nbYears];
@@ -316,7 +316,7 @@ public class Building {
 			costForYear[i] = this.costToRepairInYear(currentYear);
 			currentYear++;
 		}
-		return costForYear; // DON'T FORGET TO MODIFY THE RETURN IF NEEDS BE
+		return costForYear; 
 	}
 	//Adding up the cost of repairing within a year 
 	public int costToRepairInYear(int year) {
