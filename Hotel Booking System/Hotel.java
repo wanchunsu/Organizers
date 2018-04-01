@@ -1,5 +1,4 @@
-// Wan-Chun Su
-// 260729936
+
 
 import java.util.NoSuchElementException;
 public class Hotel {
