@@ -1,5 +1,4 @@
-// Wan-Chun Su
-// 260729936
+
 public class Room {
     private String type;
     private double price;
